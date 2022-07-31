@@ -20,10 +20,10 @@ class Register extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
             child: TextField(
               decoration: InputDecoration(
-                  hintStyle: TextStyle(color: Colors.white),
+                  hintStyle: TextStyle(),
                   border: OutlineInputBorder(borderSide: BorderSide.none),
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Color.fromARGB(255, 205, 205, 205),
                   hintText: "Email"),
             ),
           ),
@@ -31,10 +31,10 @@ class Register extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
             child: TextField(
               decoration: InputDecoration(
-                  hintStyle: TextStyle(color: Colors.white),
+                  hintStyle: TextStyle(),
                   border: OutlineInputBorder(borderSide: BorderSide.none),
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Color.fromARGB(255, 205, 205, 205),
                   hintText: "Password"),
             ),
           ),
