@@ -4,6 +4,7 @@ import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:group_project/Authentication.dart';
 import 'package:group_project/register.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class SignInScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
-    // Auth _auth = Auth();
+    Auth _auth = Auth();
     final _formKey = GlobalKey<FormState>();
     return Scaffold(
       backgroundColor: Colors.white,
@@ -67,7 +68,7 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    controller: emailController,
+                    controller: passwordController,
                     validator: (value) {
                       if (value!.isEmpty) {
                         return 'Please enter your password';
@@ -92,9 +93,9 @@ class SignInScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        // _auth.signInWithEMailAndPassword(context,
-                        //     email: emailController.text.trim(),
-                        //     password: passwordController.text.trim());
+                        _auth.signInWithEMailAndPassword(context,
+                            email: emailController.text.trim(),
+                            password: passwordController.text.trim());
                       }
                     },
                     child: Text(

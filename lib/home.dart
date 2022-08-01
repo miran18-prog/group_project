@@ -7,9 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Home'
-        ),
+        title: Text('Home'),
         centerTitle: true,
       ),
       body: Padding(
@@ -24,46 +22,33 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
             ),
-            SizedBox(
-              height:25
-            ),
+            SizedBox(height: 25),
             Container(
               margin: EdgeInsets.only(left: 15),
               width: 322,
               height: 118,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: Colors.red
-                ),
-                color: Colors.grey[350]
-              ),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.red),
+                  color: Colors.grey[350]),
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Column(
-                 crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Username:',
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold
-                      ),
+                      style:
+                          TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
-                      height: 10
-                      ),
+                    SizedBox(height: 10),
                     Text(
                       'Company',
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold
-                      ),
+                      style:
+                          TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
-                      height: 10
-                      ),
-                      Text(
+                    SizedBox(height: 10),
+                    Text(
                       'Role Description',
                       style: TextStyle(
                         fontSize: 12,
@@ -81,28 +66,21 @@ class HomeScreen extends StatelessWidget {
               width: 322,
               height: 118,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: Colors.red
-                ),
-                color: Colors.grey[350]
-              ),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.red),
+                  color: Colors.grey[350]),
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Column(
-                 crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Some',
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold
-                      ),
+                      style:
+                          TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
-                      height: 10
-                      ),
-                      Text(
+                    SizedBox(height: 10),
+                    Text(
                       'Role Description',
                       style: TextStyle(
                         fontSize: 12,
@@ -120,28 +98,21 @@ class HomeScreen extends StatelessWidget {
               width: 322,
               height: 118,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: Colors.red
-                ),
-                color: Colors.grey[350]
-              ),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.red),
+                  color: Colors.grey[350]),
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Column(
-                 crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Other',
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold
-                      ),
+                      style:
+                          TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
-                      height: 10
-                      ),
-                      Text(
+                    SizedBox(height: 10),
+                    Text(
                       'Role Description',
                       style: TextStyle(
                         fontSize: 12,
@@ -156,74 +127,68 @@ class HomeScreen extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-               child: Column(
-                children: [
-                  Container(
-                    width: 298,
-                    height: 48,
-                    child: TextField(
-                      decoration: InputDecoration(
-                        fillColor: Colors.grey[150],
-                        filled: true,
-                        hintText: 'COMPANY/ORG',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10)
-                        )
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 14,
-                  ),
-                  Container(
-                    width: 298,
-                    height: 48,
-                    child: TextField(
-                      decoration: InputDecoration(
-                        fillColor: Colors.grey[150],
-                        filled: true,
-                        hintText: 'ROLE',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10)
-                        )
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                    Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
+                child: Column(
+                  children: [
                     Container(
-                    width: 298,
-                    height: 48,
-                    child: TextField(
-                      decoration: InputDecoration(
-                        fillColor: Colors.grey[150],
-                        filled: true,
-                        hintText: 'ROLE',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10)
-                        )
+                      width: 298,
+                      height: 48,
+                      child: TextField(
+                        decoration: InputDecoration(
+                            fillColor: Colors.grey[150],
+                            filled: true,
+                            hintText: 'COMPANY/ORG',
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10))),
                       ),
                     ),
-                  ),
-                  Container(
-                    width: 25,
-                    child: IconButton(
-                    onPressed: (){}, 
-                    icon: Icon(
-                      Icons.send,
-                      color: Colors.red,
-                      size: 25,
+                    SizedBox(
+                      height: 14,
                     ),
+                    Container(
+                      width: 298,
+                      height: 48,
+                      child: TextField(
+                        decoration: InputDecoration(
+                            fillColor: Colors.grey[150],
+                            filled: true,
+                            hintText: 'ROLE',
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10))),
+                      ),
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                          width: 298,
+                          height: 48,
+                          child: TextField(
+                            decoration: InputDecoration(
+                                fillColor: Colors.grey[150],
+                                filled: true,
+                                hintText: 'ROLE',
+                                border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10))),
+                          ),
+                        ),
+                        Container(
+                          width: 25,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.send,
+                              color: Colors.red,
+                              size: 25,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-                ],
-               ),
               ),
             )
           ],

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:group_project/Authentication.dart';
 import 'package:group_project/SignIn.dart';
 
 class Register extends StatelessWidget {
@@ -13,7 +14,7 @@ class Register extends StatelessWidget {
     TextEditingController confirmPasswordController = TextEditingController();
     TextEditingController usernameController = TextEditingController();
     final _formKey = GlobalKey<FormState>();
-    // Auth _auth = Auth();
+    Auth _auth = Auth();
 
     return Scaffold(
       body: SingleChildScrollView(
@@ -107,14 +108,14 @@ class Register extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        // _auth.signUpWithEmailAndPassword(context,
-                        //     name: usernameController.text,
-                        //     email: emailController.text,
-                        //     password: passwordController.text);
+                        _auth.signUpWithEmailAndPassword(context,
+                            name: usernameController.text,
+                            email: emailController.text,
+                            password: passwordController.text);
                       }
                     },
                     child: Text(
-                      "Login",
+                      "Signup",
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                     ),
